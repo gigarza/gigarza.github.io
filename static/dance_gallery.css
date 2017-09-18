@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+.gal_photos {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+p{
+    text-align: center;
+}
+#video {
+    display: block;
+    margin: 0 auto;
+}
