@@ -17,6 +17,14 @@ p{
     display: block;
     margin: 0 auto;
 }
-#instagram {
-    text-align: center;
+.instagram-media {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(219, 219, 219);
+    max-width: 658px;
+    width: calc(100% - 2px);
+    border-radius: 4px;
+    box-shadow: none;
+    display: block;
+    padding: 0px;
+    margin: 0 auto;
 }
