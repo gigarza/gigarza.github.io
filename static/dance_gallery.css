@@ -26,5 +26,5 @@ p{
     box-shadow: none;
     display: block;
     padding: 0px;
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
