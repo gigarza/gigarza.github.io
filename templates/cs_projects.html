@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.1.1/lumen/bootstrap.min.css" rel="stylesheet" >
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../static/cs_projects.css" rel="stylesheet">
+
+    <title>CS Projects | Georgina G</title>
+</head>
+<body style="background-color: #dbedff">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="{{ url_for("homepage") }}" style="font-size: 20px">Georgina G</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Computer Science<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{{ url_for("cs_projects") }}">Projects</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/static/resumes/CS_Resume_Final.doc">Resume</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dance
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="{{ url_for("dance_info") }}">Experience</a>
+                <a class="dropdown-item" href="{{ url_for("dance_gallery") }}">Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Resume</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("contact") }}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1 style="text-align: center">Computer Science Projects</h1>
+    <p class="text-muted proj_heading"><small class="text-muted" style="font-size: 25px">[</small> Personal/Side Projects
+                         <small class="text-muted" style="font-size: 25px">]</small></p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                  <div class="card-header">To The Beat</div>
+                  <div class="card-body">
+                    <p class="card-text">A web application that curates a playlist based on a tempo and adds it to a user's spotify account.</p>
+                      <p class="tools">{ Python/Flask, Spotify API (OAuth), Javascript }</p>
+                     <a href="#" class="btn btn-secondary">Find Out More</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                  <div class="card-header">SF Dispatches</div>
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="tools">{ Python/Flask, MongoDB, Google Maps API }</p>
+                    <a href="#" class="btn btn-secondary">Find Out More</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                  <div class="card-header">DancerDB</div>
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="tools">{ Python/Flask, MongoDB, Javascript }</p>
+                   <a href="#" class="btn btn-secondary">Find Out More</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                  <div class="card-header">Header</div>
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="tools">{ Python/Flask, MongoDB, Javascript }</p>
+                    <a href="#" class="btn btn-secondary">Find Out More</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                 <p class="text-muted proj_heading"><small class="text-muted" style="font-size: 25px">[</small> School Projects
+                        <small class="text-muted" style="font-size: 25px">]</small></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-primary mb-3" style="max-width: 20rem;">
+                          <div class="card-header">PintOS</div>
+                          <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="tools">{ Python/Flask, MongoDB, Javascript }</p>
+                            <a href="#" class="btn btn-secondary">Find Out More</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-primary mb-3" style="max-width: 20rem;">
+                          <div class="card-header">Huffman Encoding</div>
+                          <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="tools">{ Python/Flask, MongoDB, Javascript }</p>
+                            <a href="#" class="btn btn-secondary">Find Out More</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="text-muted proj_heading"><small class="text-muted" style="font-size: 25px">[</small> Built at Events
+                        <small class="text-muted" style="font-size: 25px">]</small></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-primary mb-3" style="max-width: 20rem;">
+                          <div class="card-header">Header</div>
+                          <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="tools">{ Python/Flask, MongoDB, Javascript }</p>
+                            <a href="#" class="btn btn-secondary">Find Out More</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-primary mb-3" style="max-width: 20rem;">
+                          <div class="card-header">Header</div>
+                          <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="tools">{ Python/Flask, MongoDB, Javascript }</p>
+                            <a href="#" class="btn btn-secondary">Find Out More</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

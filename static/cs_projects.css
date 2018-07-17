@@ -1,18 +1,28 @@
-h1{
+.card-header {
+    font-size: 18px;
     text-align: center;
 }
 
-.project {
+.btn-secondary {
+    margin: 0 auto;
+    width: 100%
+}
+
+.card-text {
     text-align: center;
 }
 
-ul {
+.card-body {
+    padding-top: 10px;
+}
+
+.tools {
+    color: #999;
     text-align: center;
-    list-style-position: inside;
-}
-.subheader {
-    font-size: 16px;
-    font-style: italic;
 }
 
-
+.proj_heading {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
