@@ -1,6 +1,13 @@
 .card-header {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
+}
+
+.proj_type {
+    float:right;
+    font-size: 12px;
+    color:#158CBA !important;
+    padding-top: 5px;
 }
 
 .btn-secondary {
