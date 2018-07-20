@@ -35,10 +35,43 @@
     margin-bottom: 20px;
 }
 
+.modal-lg {
+    max-width: 1050px;
+}
+
 .date_created {
     text-align: center;
 }
 
 .modal-body {
     padding-top: 5px;
+}
+
+.modal-title {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.website_shot {
+    height: 135px;
+    border:1px solid black;
+    margin: 0 auto;
+}
+
+.below_space {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.right_space {
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 135px;
+}
+
+.close {
+    margin-left: -16px !important;
 }
