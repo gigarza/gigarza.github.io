@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.1.2/lumen/bootstrap.min.css" rel="stylesheet" >
-    <link href="../static/dance_gallery.css" rel="stylesheet">
+    <link href="static/dance_gallery.css" rel="stylesheet">
 
     <title>Dance Gallery | Georgina G</title>
 </head>
 <body style="background-color: #dbedff">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="{{ url_for("homepage") }}" style="font-size: 20px">Georgina G</a>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html" style="font-size: 20px">Georgina G</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,9 +25,9 @@
               Computer Science
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ url_for("cs_projects") }}">Projects</a>
+                <a class="dropdown-item" href="cs_projects.html">Projects</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/static/resumes/CS_Resume_Final.doc">Resume</a>
+                <a class="dropdown-item" href="static/resumes/CS_Resume_Final.doc">Resume</a>
             </div>
           </li>
           <li class="nav-item dropdown active">
@@ -35,14 +35,14 @@
               Dance<span class="sr-only">(current)</span>
             </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ url_for("dance_info") }}">Experience</a>
-                <a class="dropdown-item" href="{{ url_for("dance_gallery") }}">Gallery</a>
+              <a class="dropdown-item" href="dance_info.html">Experience</a>
+                <a class="dropdown-item" href="dance_gallery.html">Gallery</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Resume</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for("contact") }}">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -75,19 +75,19 @@
                       </ol>
                       <div class="carousel-inner" style="max-height: 552px;margin: 0 auto">
                         <div class="carousel-item active">
-                          <img class="d-block w-100 img_horz" src="../static/images/dsydt.jpg" alt="First slide">
+                          <img class="d-block w-100 img_horz" src="static/images/dsydt.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100 img_horz" src="../static/images/europe.jpg" alt="Second slide">
+                          <img class="d-block w-100 img_horz" src="static/images/europe.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100 img_vert" src="../static/images/jump.jpg" alt="Third slide">
+                          <img class="d-block w-100 img_vert" src="static/images/jump.jpg" alt="Third slide">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100 img_horz" src="../static/images/solo.jpg" alt="Fourth slide">
+                          <img class="d-block w-100 img_horz" src="static/images/solo.jpg" alt="Fourth slide">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100 img_horz" src="../static/images/vir_other.jpg" alt="Fifth slide">
+                          <img class="d-block w-100 img_horz" src="static/images/vir_other.jpg" alt="Fifth slide">
                         </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

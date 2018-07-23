@@ -7,14 +7,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.1.2/lumen/bootstrap.min.css" rel="stylesheet" >
     <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
-    <link href="../static/contact.css" rel="stylesheet">
+    <link href="static/contact.css" rel="stylesheet">
 
     <title>Contact | Georgina G</title>
 </head>
 <body style="background-color: #dbedff">
 
    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="{{ url_for("homepage") }}" style="font-size: 20px">Georgina G</a>
+      <a class="navbar-brand" href="index.html" style="font-size: 20px">Georgina G</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,9 +26,9 @@
               Computer Science
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ url_for("cs_projects") }}">Projects</a>
+                <a class="dropdown-item" href="cs_projects.html">Projects</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/static/resumes/CS_Resume_Final.doc">Resume</a>
+                <a class="dropdown-item" href="static/resumes/CS_Resume_Final.doc">Resume</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -36,14 +36,14 @@
               Dance
             </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ url_for("dance_info") }}">Experience</a>
-                <a class="dropdown-item" href="{{ url_for("dance_gallery") }}">Gallery</a>
+              <a class="dropdown-item" href="dance_info.html">Experience</a>
+                <a class="dropdown-item" href="dance_gallery.html">Gallery</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Resume</a>
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="{{ url_for("contact") }}">Contact<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
