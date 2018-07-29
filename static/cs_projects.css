@@ -66,12 +66,17 @@
 }
 
 .right_space {
-    display: block;
     margin-left: 5px;
     margin-right: 5px;
-    line-height: 135px;
 }
 
 .close {
     margin-left: -16px !important;
+}
+
+.mobile_shot {
+    height: 200px;
+    border:1px solid black;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
