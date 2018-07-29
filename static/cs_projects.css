@@ -1,18 +1,82 @@
-h1{
+.card-header {
+    font-size: 20px;
+    text-align: center;
+    style: block;
+    line-height: 1.0em;
+    padding-bottom: 5px;
+}
+
+.proj_type {
+    font-size: 12px;
+    color:#158CBA !important;
+}
+
+.btn-secondary {
+    margin: 0 auto;
+    width: 100%
+}
+
+.card-text {
     text-align: center;
 }
 
-.project {
+.card-body {
+    padding-top: 10px;
+}
+
+.tools {
+    color: #999;
     text-align: center;
 }
 
-ul {
+.proj_heading {
+    font-size: 20px;
     text-align: center;
-    list-style-position: inside;
-}
-.subheader {
-    font-size: 16px;
-    font-style: italic;
+    margin-bottom: 20px;
 }
 
+.modal-lg {
+    max-width: 1050px;
+}
 
+.date_created {
+    text-align: center;
+}
+
+.modal-body {
+    padding-top: 5px;
+}
+
+.modal-title {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.website_shot {
+    height: 135px;
+    border:1px solid black;
+    margin: 0 auto;
+}
+
+.below_space {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.right_space {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.close {
+    margin-left: -16px !important;
+}
+
+.mobile_shot {
+    height: 200px;
+    border:1px solid black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}

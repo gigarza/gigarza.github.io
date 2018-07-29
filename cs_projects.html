@@ -1,95 +1,478 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet" >
-        <link href="/static/cs_projects.css" rel="stylesheet">
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.1.2/lumen/bootstrap.min.css" rel="stylesheet" >
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link href="static/cs_projects.css" rel="stylesheet">
 
-        <title>CS Projects | Georgina G</title>
-    </head>
+    <title>CS Projects | Georgina G</title>
+</head>
+<body style="background-color: #dbedff">
 
-    <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Georgina G</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html" style="font-size: 20px">Georgina G</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Computer Science<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="cs_projects.html">Projects</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="static/resumes/CS_Resume_Final.doc">Resume</a>
             </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Computer Science
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="cs_projects.html">Projects</a></li>
-                            <li class="divider"></li>
-                            <li><a href="/static/resumes/cs_resume.doc">Resume</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dance
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="dance_current.html">Current Works</a></li>
-                            <li><a href="dance_gallery.html">Gallery</a></li>
-                            <li class="divider"></li>
-                            <li><a href="/static/resumes/dance_resume.docx">Resume</a></li>
-                        </ul>
-                    </li>
-                <li><a href="contact.html" class="nav navbar-nav navbar-right">Contact</a></li>
-                </ul>
-
+          </li>
+          <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dance
+            </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="dance_info.html">Experience</a>
+                <a class="dropdown-item" href="dance_gallery.html">Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Resume</a>
             </div>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-        <h1>Computer Science Projects </h1>
-
-        <div class="project">
-            <h3>DanceDB</h3>
-            <p class="subheader">A database to hold all the information a dancer or choreographer could need to access</p>
-            <ul>
-                <li>Implemented backend to access information and render webpages using Flash and Jinga2</li>
-                <li>Frontend built and designed using Bootstrap, Font Awsome, and custom CSS styling</li>
-                <li>Set up and constructed queries for MongoDB via PyMongo</li>
-            </ul>
-            <a href="http://dancedb.georginagarza.com">dancedb.georginagarza.com</a>
+    <h1 style="text-align: center">Computer Science Projects</h1>
+    <p class="text-muted proj_heading"><small class="text-muted" style="font-size: 25px">[</small> Personal/Side Projects
+                         <small class="text-muted" style="font-size: 25px">]</small></p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                  <div class="card-header">To The Beat<br><small class="text-muted proj_type">Web</small></div>
+                  <div class="card-body">
+                    <p class="card-text">A web application that curates a playlist based on a tempo and adds it to a user's spotify account.</p>
+                      <p class="tools">{ Python/Flask, Spotify API (OAuth), Javascript }</p>
+                     <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#toTheBeat">Find Out More</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                  <div class="card-header">SF Dispatches<br><small class="text-muted proj_type">Web</small></div>
+                  <div class="card-body">
+                    <p class="card-text">A web application to represent various statistics, maps, and predictions about San Francisco Dispatch data.</p>
+                    <p class="tools">{ Python/Flask, MongoDB, Google Maps API }</p>
+                    <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#sfDispatch">Find Out More</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                  <div class="card-header">DancerDB<br><small class="text-muted proj_type">Web/DB</small></div>
+                  <div class="card-body">
+                    <p class="card-text">An IMBD-type web application to represent data about dancers, companies, and performances.</p>
+                    <p class="tools">{ Python/Flask, MongoDB, Javascript }</p>
+                   <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#dancerDB">Find Out More</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                  <div class="card-header">Personal Website<br><small class="text-muted proj_type">Web</small></div>
+                  <div class="card-body">
+                    <p class="card-text">A website for personal use. Displays various information about self, through static webpages.</p>
+                      <p class="tools">{ HTML/CSS }</p>
+                    <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#header1">Find Out More</a>
+                  </div>
+                </div>
+            </div>
         </div>
-
-        <div class="project">
-            <h3>Personal Website</h3>
-            <p class="subheader">A website to display all personal information</p>
-            <ul>
-                <li>Website hosted on GitHub Pages</li>
-            </ul>
-            <a href="http://georginagarza.com">georginagarza.com</a>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                 <p class="text-muted proj_heading"><small class="text-muted" style="font-size: 25px">[</small> School Projects
+                        <small class="text-muted" style="font-size: 25px">]</small></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-primary mb-3" style="max-width: 20rem;">
+                          <div class="card-header">PintOS<br><small class="text-muted proj_type">Systems</small></div>
+                          <div class="card-body">
+                            <p class="card-text">Taking a basic Operating System and implementing necessary portions to make efficient.</p>
+                            <p class="tools">{ C }</p>
+                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#pintOS">Find Out More</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-primary mb-3" style="max-width: 20rem;">
+                          <div class="card-header">Huffman Encoding<br><small class="text-muted proj_type">Algorithmic</small></div>
+                          <div class="card-body">
+                            <p class="card-text">A way to compress a file, and then to decompress it, analyzing compression rates to be efficient.</p>
+                              <p class="tools">{ Java }</p>
+                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#huffman">Find Out More</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="text-muted proj_heading"><small class="text-muted" style="font-size: 25px">[</small> Built at Events
+                        <small class="text-muted" style="font-size: 25px">]</small></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-primary mb-3" style="max-width: 20rem;">
+                          <div class="card-header">Waitless<br><small class="text-muted proj_type">Mobile</small></div>
+                          <div class="card-body">
+                            <p class="card-text">A mobile website to read barcodes at a store and automatically purchase them, deducting funds from your bank account.</p>
+                            <p class="tools">{ Javascript, QuaggaJS, Google Maps API }</p>
+                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#waitless">Find Out More</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-primary mb-3" style="max-width: 20rem;">
+                          <div class="card-header">Pippette<br><small class="text-muted proj_type">Web</small></div>
+                          <div class="card-body">
+                            <p class="card-text">Created the frontend for simple webpages for a web application that helps automate a backend for web applications.</p>
+                              <p class="tools">{ HTML/CSS }</p>
+                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#header2">Find Out More</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    </div>
 
-        <div class="project">
-            <h3>Huffman Encoding</h3>
-            <ul>
-                <li>Created a Java program to compress and uncompress files</li>
-                <li>Implemented algorithm using maps, a priority queue, and a Huffman binary tree</li>
-                <li>Analyzed compression rates with different types of files</li>
-            </ul>
+
+    <div class="modal fade" id="toTheBeat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">To The Beat</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Summer 2018
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
+
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-4" style="text-align: center">
+                          <img class="website_shot" src="static/images/TTB_home.jpg">
+                          <i class="fas fa-arrow-down fa-2x below_space"></i>
+                          <img class="website_shot" src="static/images/TTB_create.jpg">
+                          <i class="fas fa-arrow-down fa-2x below_space"></i>
+                          <img class="website_shot" src="static/images/TTB_result.jpg">
+                      </div>
+                       <div class="col-md-8">
+                            <p>To The Beat is a web application that will make the ideal playlist for your runs, workouts, or even jams.</p>
+                            <p>The front-end of this website was made with Bootstrap, CSS, and Spotify logos provided by Font-Awesome. The backend is generated by python/flask and javascript.</p>
+                           <p>When the user first enters the application, they will click to log-in to Spotify which prompts Spotify API calls to authorize that user's account to be used. Once
+                               the account has been authorized with OAuth, the backend will receive the access token and the ID for the Spotify user.</p>
+                           <p>Once redirected to the next page, the user will be prompted to enter their selections for the name and tempo they want for their new playlist. The backend will then
+                               consistently update what the user has typed. There is also a sound button on the page which plays a single beat at the speed they have entered. This is done by calculating
+                               how many milliseconds would be between each beat, then playing a simple single beat mp3 file.</p>
+                           <p>Once the user clicks submit to enter their choices, the backend of the code then grabs the information from the user. It then makes Spotify API calls to first get all
+                               of the user's faved songs. Using the Spotify ID of each of these songs, it then makes another Spotify API call to get the track info, which has the tempo of the song. This
+                            tempo is then compared against the user's requested tempo, and if it is within 3BPM of the request, it is added to a list of songs for the new playlist.</p>
+                           <p>Once the user's songs have been analyzed to find the ones which match tempo, a Spotify API call is made to create a new playlist with the name the user chose. The list of songs is
+                           then added into this new playlist. Lastly, the user is redirected to a result page where details about their new playlist are listed, and the playlist itself is embedded into the page.</p>
+                       </div>
+                  </div>
+
+              </div>
+          </div>
+          <div class="modal-footer">
+              <a href="https://github.com/gigarza/ToTheBeat"><button class="btn btn-primary" ><i class="fab fa-github" style="margin-right: 5px"></i>See The Code</button></a>
+              <a href="https://tothebeat.herokuapp.com/"><button class="btn btn-primary">Visit Site</button></a>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="project">
-            <h3>Recursive Maze Tracker</h3>
-            <ul>
-                <li>Implemented a Java program to read an ASCII maze, navigate to all the coins in it, and then reach the exit</li>
-                <li>Used recursive properties, 2D arrays, and object orientaed programming</li>
-            </ul>
+    <div class="modal fade" id="sfDispatch" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">SF Dispatches</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Spring 2018
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
+
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-4" style="text-align: center">
+                          <img class="website_shot" src="static/images/sf_home.jpg">
+                          <i class="below_space"></i>
+                          <img class="website_shot" src="static/images/sf_stats.jpg">
+                          <i class="below_space"></i>
+                          <img class="website_shot" src="static/images/sf_maps.jpg">
+                          <i class="below_space"></i>
+                          <img class="website_shot" src="static/images/sf_interact.jpg">
+                      </div>
+                       <div class="col-md-8">
+                           <p>This webapp acts as a way to represent various data about San Francisco Dispatches. The data was received through csv files, then
+                           input into a MongoDB database through a python backend file. Bootstrap/Bootswatch was used throughout the webapp to assist in frontend styling.</p>
+                           <p>When the user first comes upon the site, they will hit the homepage, made solely through static html/css files. From this homepage, the
+                           user can then get to any other page on the webapp.</p>
+                           <p>The first page they can go to is the Statistics & Graphs page. On this page, the user can find various graphs and facts about the data. The
+                           page itself was created using html/css files, but also an integration of Chartist.js to represent the data graphically. The data is
+                            connected into these files by looking for and grabbing the necessary information from the database in the main python file.</p>
+                           <p>Informational Maps is the second page a user can choose to go to. The user has the option to checkout 4 different maps on this page for
+                           more visual information about the dispatch data. The first graph shows the zipcodes within San Francisco which seem to take the longest time
+                           to dispatch. The Heat Map shows the user the frequency of dispatch calls across the city. The third map shows the user which are considered the
+                           safest neighborhoods in the city (in relation to crime and dispatch call frequency). The final map then shows the zipcodes which have the highest
+                           increasing rate of dispatch calls. All of the information for these maps was figured out algorithmically through a python backend along with get
+                            requests on the database. The maps were then represented by using the Google Maps API and GeoJSON files.</p>
+                           <p>Thirdly, a user can look at the Most Likely Dispatch page, which will show them the dispatch that is most likely to occur based on
+                           a location and time. The time input was integrated using TimePicker for jQuery, while the map and the marker drop were integrated using the
+                           Google Maps API. After the user has clicked submit, an algorithm begins to discover what range of time and what areas to grab data from. From there,
+                           the new list is gone through to find which type of dispatch call will be most likely, and outputs this result to the user.</p>
+                           <p>Check out the code & readme on github to find out more information about the logic for the backend!</p>
+                       </div>
+                  </div>
+
+              </div>
+          </div>
+          <div class="modal-footer">
+              <a href="https://github.com/gigarza/sf-dispatches"><button class="btn btn-primary"><i class="fab fa-github" style="margin-right: 5px"></i>See The Code</button></a>
+              <a href="https://sf-dispatches.herokuapp.com/"><button class="btn btn-primary">Visit Site</button></a>
+          </div>
         </div>
+      </div>
+    </div>
 
+    <div class="modal fade" id="dancerDB" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">DancerDB</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Fall 2018
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
+                            <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-4" style="text-align: center">
+                          <img class="website_shot" src="static/images/dancedb_comp.jpg">
+                          <i class="below_space"></i>
+                          <img class="website_shot" src="static/images/dancedb_form.jpg">
+                          <i class="below_space"></i>
+                          <img class="website_shot" src="static/images/dancedb_person.jpg">
+                      </div>
+                       <div class="col-md-8">
+                           <p style="margin-top: 15px">DancerDB acts as a one-stop website for all the information someone could want about dancers, companies, or even performances. The
+                           website as a whole uses Bootstrap/Bootswatch and FontAwesome for assistance in front-end styling.</p>
+                           <p>All the data for this webapp is held in MongoDB. This database is updated every time an admin uses the add person or add company
+                           admin pages. These pages are simple html forms that send the data to the database once the user clicks submit.</p>
+                           <p>The user will first come upon the homepage which simply displays a carousel of some images from the webapp. The user can then use
+                           the navigation bar at the top of their screen to get into the depths of the webapp.</p>
+                           <p>Under the companies tab, a user can find various dance company, and click links to find out more. On a specific company's page a
+                           user can find a description of the company, a link to each of its members & choreographers, a list of upcoming performances, and a few
+                           statistics over the company.</p>
+                           <p>One can find the information about a specific dancer, choreographer, or director from the hyper links in their associated companies or
+                               from the people tab. On a person's page a user will find their biography, a headshot, stastics over the person, links to various social media
+                           and a video if available.</p>
+                       </div>
+                  </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-    </body>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <a href="https://github.com/gigarza/dancerdb"><button class="btn btn-primary"><i class="fab fa-github" style="margin-right: 5px"></i>See The Code</button></a>
+              <a href="http://dancedb.georginagarza.com/"><button class="btn btn-primary">Visit Site</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="header1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Personal Website</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Updated Summer 2018
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
+              <p>This is the website you are on! Welcome to my personal website. This website is completely static and created using custom html/css
+              but with the help of Bootstrap/Bootswatch and FontAwesome for some front-end styling. Most of the pages for the webapp can be accessed
+                  from the homepage or from the navigation bar located at the top of all the other pages. Some noteable UI portions of this webapp are the
+              modals for each project in the CS projects page (like the one you're on), the carousel for the dance gallery, and the dropdown menus throughout.
+              The various pages on the site are updated to show the most recent information. Although the site is not yet suitable for a mobile screen,
+                  I am hoping to attack that possibility next. Interested to look at the html or css code? Checkout the button to the github!</p>
+          </div>
+          <div class="modal-footer">
+              <a href="https://github.com/gigarza/gigarza.github.io"><button class="btn btn-primary"><i class="fab fa-github" style="margin-right: 5px"></i>See The Code</button></a>
+              <a href="https://georginagarza.com"><button class="btn btn-primary">Visit Site</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="pintOS" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">PintOS</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Spring 2018
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
+              <p>Completed while taking the Operating Systems course at UT. The PintOS project was split up into 4 separate projects
+              which each were meant to improve the operating system that was already in place. The first of these projects tackled improving
+                  the minimally functioning thread system. To do this, the sleep timer function was improved as to not busy wait,
+                  implemented priority scheduling, and finally priority donation to prevent threads from forever holding onto
+                  locks while they are low in the ready list. The second project focused entirely on allowing the Operating System to be
+                  fully functional with user programs. This required an implementation of argument passing on the stack and system calls. Improvement
+                  to Virtual Memory was the main task of the third project, which was completed by </p>
+              <p>As this was a school project, no code is available to be seen. However, if you would like to find out more, please
+              feel free to contact me by heading over to the 'Contact' page on this website.</p>
+          </div>
+          <div class="modal-footer">
+            <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> No code or source available
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="huffman" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Huffman Encoding</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Spring 2017
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
+              <p>Completed while taking the Data Structures course at UT. This project's focus was to create a way to compress files, decompress the
+                  resulting files, and then analyze the compression rates to maximize the efficiency.</p>
+              <p>To begin compressing a file, the file is parsed through
+              byte by byte and a map is created to account for the frequencies of all the different characters within the file. An eof is also added into
+              this map. A priority queue of tree nodes is then created based on the frequencies of the characters. This priority queue is then passed into a
+                  function which creates a tree based off of it. For the tree, a new parent node is created with children which are two elements which are
+                  dequeued. This is done until there is only one node left in the queue, which will be the root of the tree. A map of codes is then created
+              based off the tree, where a 0 indicates a shift left and a 1 indicates a shift right until an entire path is created. Lastly, a header is created
+              which stores the information of the tree format. Finally a new file is created and the header data is written and then the compressed data is written
+              according to the codes which were created.</p>
+              <p>To being decompressing a file, the header data is the first thing to be decompressed. The header data will reveal the frequency of the characters
+              so a frequency map can then be created. Similarly to compressing a file, a priority queue based on this is then created in order to create a tree. From
+              this tree, we can generate codes which should match the codes created during compression. With this, we can then go through the compressed data, and with
+              those codes, go through our newly created tree to figure out which characters correspond. From here, the file has been fully decompressed.</p>
+              <p>For the project, different files were then fed into the program to analyze different compress/decompress rates based on the size of files. It
+              turns out this program works best on larger files where there is higher frequency of characters.</p>
+              <p>As this was a school project, no code is available to be seen. However, if you would like to find out more, please
+              feel free to contact me by heading over to the 'Contact' page on this website.</p>
+          </div>
+          <div class="modal-footer">
+            <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> No code or source available
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="waitless" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Waitless</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Summer 2018
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
+
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-4" style="text-align: center">
+                          <img class="mobile_shot" src="static/images/waitless_home.jpg">
+                           <i class="right_space"></i>
+                          <img class="mobile_shot" src="static/images/waitless_scan.jpg">
+                          <br class="below_space">
+                          <img class="mobile_shot" src="static/images/waitless_confirm.jpg">
+                          <i class="right_space"></i>
+                          <img class="mobile_shot" src="static/images/waitless_history.jpg">
+                      </div>
+                       <div class="col-md-8">
+                           <p>This webapp for mobile devices provides a Capital One user the ability to have a faster checkout experience at retail stores.</p>
+                          <p>When the user opens the home page, and has already logged in, they have the option to add new items to purchase, look at their
+                              current cart, or view their transaction history. When they want to add a new item, they will go to the scan screen. </p>
+                          <p>This scan screen recognizes the user's location, and initially gives the closest retail store. If this is not the location they are
+                          at, they can click to change through to other local retail stores until they find the correct one. This is all done using the Google Maps API
+                               to recognize a user's location and search for the top 10 closest retail stores. After the user has chosen a location, they place the
+                          barcode of their item under the camera. The program then scans the barcode, finds the product, and adds to the cart. The scanner itself was integrated
+                              using QuaggaJS, which will return the number of the barcode to the backend of the code. This barcode is then lookedup in the database to find
+                               the item that matches it. This item is then added into a list that represents the user's cart. Once the user is ready to complete their purchase, they can click checkout.</p>
+                        <p>The checkout screen will then list all the items in the cart, also allowing the user to remove any unwanted items.
+                            Finally, they click submit purchase, and the total is automatically removed from their Capital One bank account using a call to the Capital One API.</p>
+                       </div>
+                  </div>
+
+              </div>
+          </div>
+          <div class="modal-footer">
+              <a href="https://github.com/tmni/waitless"><button class="btn btn-primary"><i class="fab fa-github" style="margin-right: 5px"></i>See The Code</button></a>
+            <button class="btn btn-primary">Visit Site</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="header2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Pippette</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Winter 2018
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
+              <p>Created at the 2018 TAMUHack (A&M's annual Hackathon), Pippete is a webapp in which a user can create a powerful backend for their web
+              applications through a simple drag and drop feature, instead of writing extensive code. I personally created all the frontend for the pages,
+                  besides the main drag & drop page, by creating simple HTML/CSS pages assisted through Bootswatch templates.</p>
+          </div>
+          <div class="modal-footer">
+              <a href="https://devpost.com/software/pipette-o1de6u"><button class="btn btn-primary">See More</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
 </html>

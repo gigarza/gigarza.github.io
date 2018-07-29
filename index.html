@@ -1,69 +1,66 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet" >
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/static/home.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.1.2/lumen/bootstrap.min.css" rel="stylesheet" >
 
-        <title>Georgina Garza</title>
+        <title>Home | Georgina Garza</title>
     </head>
-    <body>
 
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Georgina G</a>
+<body style="background-color: #dbedff">
+    <!--TODO:Maybe have a large gray block around everything-->
+    <div class="container-fluid">
+        <div class="row" style="position: absolute; top: 45%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">
+            <div class="col-md-2">
             </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Computer Science
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="cs_projects.html">Projects</a></li>
-                            <li class="divider"></li>
-                            <li><a href="/static/resumes/cs_resume.doc">Resume</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dance
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="dance_current.html">Current Works</a></li>
-                            <li><a href="dance_gallery.html">Gallery</a></li>
-                            <li class="divider"></li>
-                            <li><a href="/static/resumes/dance_resume.docx">Resume</a></li>
-                        </ul>
-                    </li>
-                <li><a href="contact.html" class="nav navbar-nav navbar-right">Contact</a></li>
-                </ul>
-
+            <div class="col-md-4">
+                <img style="display: block; margin: 0 auto; width: 75%; border-radius: 10px" src="static/images/georgina_headshot.jpg"> </img>
+                <!--TODO:links to social media, linkedin, etc-->
+            </div>
+            <div class="col-md-4" style="margin-top: 52px">
+                <h1 style="text-align: center; font-size: 70px; margin-bottom: 0px">Georgina Garza</h1>
+                <!--TODO:Update Fonts-->
+                <p style="font-size: 20px; text-align: center; color: #999"><small class="text-muted" style="font-size: 30px">[</small> Programmer by day, Dancer by night
+                         <small class="text-muted" style="font-size: 30px">]</small></p>
+                <h4 style="text-align: center; margin-bottom: 40px; font-size: 18px">Currently a rising junior at the University of Texas at Austin, Georgina is both a BSA in Computer Science
+                and a BA in Theatre and Dance, Honors (Concentration in Dance). She is extremely passionate about both fields, and can't wait to see what
+                her future will hold. Learn a little more about her by clicking below.</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="btn-group">
+                          <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 200px !important; font-size: 13px">
+                            The CS Side
+                          </button>
+                          <div class="dropdown-menu" style="width: 200px !important">
+                            <a class="dropdown-item" href="cs_projects.html">Projects</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="static/resumes/CS_Resume_Final.doc">Resume</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                         <div class="btn-group">
+                          <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 200px !important; font-size: 13px">
+                            The Dance Side
+                          </button>
+                          <div class="dropdown-menu" style="width: 200px !important">
+                            <a class="dropdown-item" href="dance_info.html">Experience</a>
+                            <a class="dropdown-item" href="dance_gallery.html">Gallery</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Resume</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
             </div>
         </div>
-    </nav>
+    </div>
 
+</body>
 
-               <img id="headshot" src="/static/images/georgina.jpg"> </img>
-
-                <h2>Georgina Garza is currently a student at the University of Texas at Austin, pursuing both a Bachelor of
-                    Science and Art in Computer Science and a Bachelor of Art in Theatre and Dance, with a concentration in dance.</h2>
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-
-
-    </body>
 </html>
