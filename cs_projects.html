@@ -463,15 +463,15 @@
           <div class="modal-body">
                         <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Summer 2018
                          <small class="text-muted" style="font-size: 20px">]</small></p>
-              <p>Created at the 2018 CDK Global Annual Hackathon, CapGen is a API in which a user can input a car's vin number, and receive an automatically
-                  generated description for the vehicle. For the hackathon, the project was presented on a UI to simply demo the program's capabilities. It was
+              <p>Created at the 2018 CDK Global Annual Hackathon, CapGen is an API in which a user can input a car's vin number, and receive an automatically
+                  generated description for the vehicle. For the hackathon, the project was presented on a UI, built in Angular, to simply demo the program's capabilities. It was
               imagined that if this were to go to production for the company, it would simply act as an API for clients that wouldn't have such a structured UI.
               The API itself was deployed using Docker, and was set to be as production ready as possible.</p>
               <img style="height: 220px; margin: 0 auto; display: block" src="static/images/capgen_flow.jpg">
               <p style="margin-top: 16px">For the backend of the project, two separate models were trained in order to produce the descriptions. The model
               for the images was created using Keras' built in VGG model in order to extract features from the photo as a way to encode the images. For training, the correlated
               descriptions were tokenized and then the inputs and outputs were encoded in order to be prepared for the model. The model itself was then built in such a way that there
-              were 3 portions: a photo feature extractor, a sequence processor, and a decoder. The model was then fit using data provided by CDK global, and saved. This model is
+              were 3 portions: a photo feature extractor, a sequence processor, and a decoder. The model was then trained and fit using data provided by CDK global on AWS, and saved. This model is
               what predicts and generates the descriptions of the vehicles.</p>
               <p>When presented, the UI has a user input a vehicle's unique vin number, which our API then calls a CDK Vin Decoder API in order to gather images and features of
                   the specific vehicle to send to the backend. In the backend a function is called which sends this information to the pre-saved model and spits out the generated
