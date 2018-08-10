@@ -140,10 +140,10 @@
                     </div>
                     <div class="col-md-6">
                         <div class="card border-primary mb-3" style="max-width: 20rem;">
-                          <div class="card-header">Pippette<br><small class="text-muted proj_type">Web</small></div>
+                          <div class="card-header">CapGen<br><small class="text-muted proj_type">Machine Learning</small></div>
                           <div class="card-body">
-                            <p class="card-text">Created the frontend for simple webpages for a web application that helps automate a backend for web applications.</p>
-                              <p class="tools">{ HTML/CSS }</p>
+                            <p class="card-text">Generated a description based off a car's images and features, which are grabbed from the car's vin, and sent to custom API.</p>
+                              <p class="tools">{ Deep Learning, CDK Vin API, Python, Docker }</p>
                             <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#header2">Find Out More</a>
                           </div>
                         </div>
@@ -455,20 +455,35 @@
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Pippette</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">CapGen</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Winter 2018
+                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Summer 2018
                          <small class="text-muted" style="font-size: 20px">]</small></p>
-              <p>Created at the 2018 TAMUHack (A&M's annual Hackathon), Pippete is a webapp in which a user can create a powerful backend for their web
-              applications through a simple drag and drop feature, instead of writing extensive code. I personally created all the frontend for the pages,
-                  besides the main drag & drop page, by creating simple HTML/CSS pages assisted through Bootswatch templates.</p>
+              <p>Created at the 2018 CDK Global Annual Hackathon, CapGen is a API in which a user can input a car's vin number, and receive an automatically
+                  generated description for the vehicle. For the hackathon, the project was presented on a UI to simply demo the program's capabilities. It was
+              imagined that if this were to go to production for the company, it would simply act as an API for clients that wouldn't have such a structured UI.
+              The API itself was deployed using Docker, and was set to be as production ready as possible.</p>
+              <img style="height: 220px; margin: 0 auto; display: block" src="static/images/capgen_flow.jpg">
+              <p style="margin-top: 16px">For the backend of the project, two separate models were trained in order to produce the descriptions. The model
+              for the images was created using Keras' built in VGG model in order to extract features from the photo as a way to encode the images. For training, the correlated
+              descriptions were tokenized and then the inputs and outputs were encoded in order to be prepared for the model. The model itself was then built in such a way that there
+              were 3 portions: a photo feature extractor, a sequence processor, and a decoder. The model was then fit using data provided by CDK global, and saved. This model is
+              what predicts and generates the descriptions of the vehicles.</p>
+              <p>When presented, the UI has a user input a vehicle's unique vin number, which our API then calls a CDK Vin Decoder API in order to gather images and features of
+                  the specific vehicle to send to the backend. In the backend a function is called which sends this information to the pre-saved model and spits out the generated
+              description. The UI then transitions to a results page where the image, features, and newly created description are displayed to the user.</p>
+              <p>At the time of the hackathon demonstration only the model for the images was being used, as the feature model portion was still being trained and developed.
+                  As this was a project done while working at CDK Global as an intern, no code is available to be seen. However, if you would like to find out
+                  more, please feel free to contact me by heading over to the 'Contact' page on this website.</p>
+
           </div>
           <div class="modal-footer">
-              <a href="https://devpost.com/software/pipette-o1de6u"><button class="btn btn-primary">See More</button></a>
+             <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> No code or source available
+                         <small class="text-muted" style="font-size: 20px">]</small></p>
           </div>
         </div>
       </div>
