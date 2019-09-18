@@ -104,21 +104,21 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card border-primary mb-3" style="max-width: 20rem;">
-                          <div class="card-header">PintOS<br><small class="text-muted proj_type">Systems</small></div>
+                          <div class="card-header">PetPals<br><small class="text-muted proj_type">iOS Mobile</small></div>
                           <div class="card-body">
-                            <p class="card-text">Taking a basic Operating System and implementing necessary portions to make efficient.</p>
-                            <p class="tools">{ C }</p>
-                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#pintOS">Find Out More</a>
+                            <p class="card-text">An app to allow pet owners to connect with other pet owners and set up play dates using a Tinder-esque interface.</p>
+                              <p class="tools">{ Swift, Firebase, Geofire, Koloda }</p>
+                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#petpals">Find Out More</a>
                           </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="card border-primary mb-3" style="max-width: 20rem;">
-                          <div class="card-header">Huffman Encoding<br><small class="text-muted proj_type">Algorithmic</small></div>
+                          <div class="card-header">PintOS<br><small class="text-muted proj_type">Systems</small></div>
                           <div class="card-body">
-                            <p class="card-text">A way to compress a file, and then to decompress it, analyzing compression rates to be efficient.</p>
-                              <p class="tools">{ Java }</p>
-                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#huffman">Find Out More</a>
+                            <p class="card-text">Taking a basic Operating System and implementing necessary portions to make efficient.</p>
+                            <p class="tools">{ C }</p>
+                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#pintOS">Find Out More</a>
                           </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card border-primary mb-3" style="max-width: 20rem;">
-                          <div class="card-header">Waitless<br><small class="text-muted proj_type">Mobile</small></div>
+                          <div class="card-header">Waitless<br><small class="text-muted proj_type">Mobile Site</small></div>
                           <div class="card-body">
                             <p class="card-text">A mobile website to read barcodes at a store and automatically purchase them, deducting funds from your bank account.</p>
                             <p class="tools">{ Javascript, QuaggaJS, Google Maps API }</p>
@@ -316,7 +316,7 @@
             </button>
           </div>
           <div class="modal-body">
-                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Updated Summer 2018
+                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Updated Summer 2019
                          <small class="text-muted" style="font-size: 20px">]</small></p>
               <p>This is the website you are on! Welcome to my personal website. This website is completely static and created using custom html/css
               but with the help of Bootstrap/Bootswatch and FontAwesome for some front-end styling. Most of the pages for the webapp can be accessed
@@ -363,36 +363,40 @@
       </div>
     </div>
 
-    <div class="modal fade" id="huffman" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="petpals" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Huffman Encoding</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">PetPals</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Spring 2017
+                        <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> Created Spring 2019
                          <small class="text-muted" style="font-size: 20px">]</small></p>
-              <p>Completed while taking the Data Structures course at UT. This project's focus was to create a way to compress files, decompress the
-                  resulting files, and then analyze the compression rates to maximize the efficiency.</p>
-              <p>To begin compressing a file, the file is parsed through
-              byte by byte and a map is created to account for the frequencies of all the different characters within the file. An eof is also added into
-              this map. A priority queue of tree nodes is then created based on the frequencies of the characters. This priority queue is then passed into a
-                  function which creates a tree based off of it. For the tree, a new parent node is created with children which are two elements which are
-                  dequeued. This is done until there is only one node left in the queue, which will be the root of the tree. A map of codes is then created
-              based off the tree, where a 0 indicates a shift left and a 1 indicates a shift right until an entire path is created. Lastly, a header is created
-              which stores the information of the tree format. Finally a new file is created and the header data is written and then the compressed data is written
-              according to the codes which were created.</p>
-              <p>To being decompressing a file, the header data is the first thing to be decompressed. The header data will reveal the frequency of the characters
-              so a frequency map can then be created. Similarly to compressing a file, a priority queue based on this is then created in order to create a tree. From
-              this tree, we can generate codes which should match the codes created during compression. With this, we can then go through the compressed data, and with
-              those codes, go through our newly created tree to figure out which characters correspond. From here, the file has been fully decompressed.</p>
-              <p>For the project, different files were then fed into the program to analyze different compress/decompress rates based on the size of files. It
-              turns out this program works best on larger files where there is higher frequency of characters.</p>
-              <p>As this was a school project, no code is available to be seen. However, if you would like to find out more, please
-              feel free to contact me by heading over to the 'Contact' page on this website.</p>
+              <div class="row">
+                  <div class="col-md-3" style="text-align: center">
+                          <img class="mobile_shot" src="static/images/petpals_home.jpeg">
+                </div>
+                <div class="col-md-9">
+                    <p>Completed while taking the iOS Mobile Computing course at UT. This project's focus was to create a fully working iOS Mobile Application that
+                  would allow pet owners to meet other pet owners to set up play dates; basically, a tinder for pets.</p>
+                    <p>To implement ability for users to create accounts, used Firebase. Firebase authentication then held all this information so users
+                        could quickly login to the app upon load, or be auto-recognized by their device. Additionally, Firebase was used as a database/storage
+                    tool in order to keep track of all user preferences/settings, as well as the users they've "swiped" or "matched with". Each user has their own profile
+                    page, where they can update their profile picture, name, animal type, and a short bio, and settings page where they can update their preferences
+                    on the types of matches they want to look for.</p>
+                    <p>On the home screen for the application, users would see a single card at a time representing a different user which met the specified requests
+                    and settings. One of these settings included the distance between the users, which was grabbed by the most recent location of those users when
+                    having the app open, which was grabbed and then stored using Geofire. In order for the user to decide whether to "like" or "decline" this other user,
+                    they could simply swipe right or left on the screen. This was implemented using Koloda for the swipe animations and functionality.</p>
+                    <p>Lastly, a user could go to a screen which would show all their recently created matches (users which both "liked" each other), and set-up pet play dates. After
+                        setting up dates, each user could then see their matches and pet dates categorized by upcoming scheduled dates, invitations for pet dates by other users,
+                        and tentative dates (dates this user suggested to others). A toggle at the top of this screen would then take the user to a calendar, implemented with
+                        JTAppleCalendar, which would show a visual of all the upcoming set dates.</p>
+                </div>
+              </div>
           </div>
           <div class="modal-footer">
             <p class="text-muted date_created"><small class="text-muted" style="font-size: 20px">[</small> No code or source available
