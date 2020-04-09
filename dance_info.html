@@ -1,152 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.1.2/lux/bootstrap.min.css" rel="stylesheet" >
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="static/dance_info.css" rel="stylesheet">
 
-    <title>Dance Info | Georgina G</title>
-</head>
-<body style="background-color: #FFFFFF">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="index.html" style="font-size: 20px">Georgina G</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <title>Dance | Georgina Garza</title>
 
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Computer Science
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="static/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="static/dance_gallery.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="static/mdb.min.js"></script>
+
+  </head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <strong>GEORGINA GARZA</strong>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="cs_projects.html">Projects</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="static/resumes/CS_Resume_Final.pdf">Resume</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown active">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dance<span class="sr-only">(current)</span>
-            </a>
-             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="dance_info.html">Experience</a>
-                <a class="dropdown-item" href="dance_gallery.html">Gallery</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Resume</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid">
-        <div class="row" style="margin-top: 15px">
-            <div class="col-md-8">
-                <h3 style="text-align: center; margin-bottom: 15px">Dance Biography</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img style="width: 100%" src="static/images/gg_partial_body.jpg">
-                    </div>
-                    <div class="col-md-6">
-                        <p>Georgina Garza was born in raised in Austin, Texas, and began dancing at the age of 6 with the dance form Ballet Folklorico. She pursued Ballet Folklorico, eventually joining the Junior Company at Roy Lonzano's Ballet Folklorico
-                            de Texas, and soon began pursuing other styles of dance at Tapestry Academy.</p>
-                        <p>From the fall of 2012 to the spring of 2016, Georgina was a member of Visions in Rhythm, a pre-professional youth dance company
-                            at Tapestry Academy, under the direction of Stacie Stalmach, Siobahn Cook, and Caitlin McGee. During her last year with the
-                            company, 2015-2016, she served as VIR's Dance Captain. While with VIR, Georgina had the opportunity to work with renowned choreographers, present her own choreography, and perform alongside Tapestry's professional company in their annual
-                            'Mice and Music' show for 6 years.</p>
-                        <p>Between 2014-2015, Georgina was a part of Diverse Space Youth Dance Theatre under the direction of Toni Bravo. As part of this company, she traveled
-                            to both Dublin and Berlin to train and perform, including the annual Irish Youth Dance Festival.
-                        <p>Following high school, Georgina joined The Andrea Torres Dance Company under the direction of Dre Torres. During her time with this
-                            professional company, she was given the opportunity to perform on many notable stages in Austin, such as The Long Center and The Paramount.</p>
-                        <p>Currently, Georgina is a rising senior at the University of Texas at Austin pursuing a BSA in Computer Science
-                            and a BA in Theatre and Dance (concentration in Dance). At UT, she has performed with Dance Repertory Theatre, UT's leading dance company
-                            in Fall For Dance (Fall 2018) and Fortitude (Spring 2019) in works developed by Gesel Mason, Erica Gionfriddo, Charles O. Anderson, and
-                            Addison Norman. Additionally, she has performed with Dance Action, an organization that puts on a fully student run and choreographed
-                            show each semester. This will be her second year as an officer for Dance Action, with the role of Co-Production Coordinator.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h3 style="text-align: center; margin-bottom: 25px; margin-left: 35px; margin-top: 15px">Upcoming Performances</h3>
-                <div class="row">
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-md-3">
-                        <p class="date_block">Nov<br>12-17</p>
-                    </div>
-                    <div class="col-md-7">
-                        <h5 style="text-align: center">Fall For Dance</h5>
-                        <p style="text-align: center">The UT Dance Program's annual fall performance. Works TBD.</p>
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                </div>
-                <h3 style="text-align: center; margin-bottom: 25px; margin-left: 35px; margin-top: 25px">Recent Performances</h3>
-                <div class="row">
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-md-3">
-                        <p class="date_block">April<br>15-19</p>
-                    </div>
-                    <div class="col-md-7">
-                        <h5 style="text-align: center">New Works Festival</h5>
-                        <p>Biennial week-long showcase of new works produced by students at UT Austin. Works by Carolina Sirias.</p>
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-md-3">
-                        <p class="date_block">March<br>5-15</p>
-                    </div>
-                    <div class="col-md-7">
-                        <h5 style="text-align: center">Fortitude</h5>
-                        <p style="text-align: center">The UT Dance Program's annual spring performance. Works by Erica Gionfriddo and Charles Anderson.</p>
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-md-3">
-                        <p class="date_block">Nov<br>6-11</p>
-                    </div>
-                    <div class="col-md-7">
-                        <h5 style="text-align: center">Fall For Dance 2018</h5>
-                        <p style="text-align: center">The UT Dance Program's annual fall performance. Works by Gesel Mason and Addison Norman.</p>
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                </div>
-                                <div class="row">
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-md-3">
-                        <p class="date_block">April<br>15-19</p>
-                    </div>
-                    <div class="col-md-7">
-                        <h5 style="text-align: center">Jubilee 2018</h5>
-                        <p>The Dance Project's quartely show. Performed 'Sense' by Andrea Torres as part of The Andrea Torres Dance Company.</p>
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Dance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tech.html">Tech</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
+
+  <!--Main layout-->
+    <main>
+        <div class="container" style="margin-top: 100px">
+
+            <!--Section: Main info-->
+            <section class="mt-5 wow fadeIn">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                        <img src="./static/images/gg_partial_body.jpg" class="img-fluid z-depth-1-half" alt="" style="height: 500px; display: block; margin: 0 auto">
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                        <div>
+                        <!-- Main heading -->
+                        <h3 class="h3 mb-3 text-center">ABOUT</h3>
+                        <p>
+                            Georgina Garza is currently a senior at The University of Texas at Austin, pursuing the simultaneous majors of B.A. Dance and B.S.A. Computer Science. While at UT, she has performed as part of Dance Repertory Theatre in <i>Fall For Dance</i> (2018, 2019), <i>Fortitude</i> (2019), and unstaged <i>(R)evolution</i> (2020), with works by Rena Butler, Erica Gionfriddo, Charles O. Anderson, and more. Prior, she traveled with Diverse Space Youth Dance Theatre, under the direction of Toni Bravo, to perform in the Irish Youth Dance Festival.  Locally in Austin, Texas, Georgina was a part of The Andrea Torres Dance Company and Visions in Rhythm, dancing at local venues.
+                        </p>
+                        <!-- Main heading -->
+                        <!-- CTA -->
+                        <div style="display: flex; justify-content: center">
+                            <a target="_blank" class="btn btn-outline-black btn-md waves-effect waves-light" href="static/resumes/Garza_Georgina_Dance_Resume.pdf">Resume</a>
+                            <a target="_blank" class="btn btn-outline-black btn-md waves-effect waves-light" href="static/resumes/Garza_Georgina_Dance_CV.pdf">Curriculum Vitae</a>
+                        </div>
+                    </div>
+                        </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+<!--
+            <hr class="my-5">
+
+            <section>
+                <h3 class="h3 text-center mb-5">ARTIST STATEMENT</h3>
+
+                <p></p>
+
+            </section>
+            -->
+            <hr class="my-5">
+
+
+            <section style="margin-bottom: 50px">
+                <h3 class="h3 text-center mb-5">GALLERY</h3>
+
+                <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel" style="background-color: black">
+                  <!--Indicators-->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="5"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="6"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="7"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="8"></li>
+                  </ol>
+                  <!--/.Indicators-->
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+                    <<div class="carousel-item active">
+                        <img class="d-block w-100 img_horz" src="static/images/ffd18_leg.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img_horz" src="static/images/tedX.JPG" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img_horz" src="static/images/dsydt.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img_horz" src="static/images/gionfriddo.jpg" alt="Fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img_horz" src="static/images/europe.jpg" alt="Fifth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img_vert" src="static/images/jump.jpg" alt="Sixth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img_horz" src="static/images/ffd18_open.jpg" alt="Seventh slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img_horz" src="static/images/solo.jpg" alt="Eighth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img_horz" src="static/images/vir_other.jpg" alt="Ninth slide">
+                    </div>
+                  </div>
+                  <!--/.Slides-->
+                  <!--Controls-->
+                  <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <!--/.Controls-->
+                </div>
+                <!--/.Carousel Wrapper-->
+
+            </section>
+        </div>
+    </main>
 
 </body>
 </html>
