@@ -1,5 +1,4 @@
 .card-header {
-    font-size: 20px;
     text-align: center;
     style: block;
     line-height: 1.0em;
@@ -44,7 +43,6 @@
 
 .modal-title {
     margin: 0 auto;
-    font-size: 20px;
     font-weight: bold;
 }
 
