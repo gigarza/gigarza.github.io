@@ -47,7 +47,7 @@
 }
 
 .website_shot {
-    height: 135px;
+    max-width: 95%;
     border:1px solid black;
     margin: 0 auto;
 }
@@ -68,7 +68,15 @@
 }
 
 .mobile_shot {
-    height: 200px;
+    max-height: 200px;
+    border:1px solid black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.length_shot {
+    max-height: 300px;
+    max-width: 95%;
     border:1px solid black;
     margin: 0 auto;
     margin-bottom: 10px;
